@@ -1,3 +1,22 @@
-button {
-    background: red;
+.button,
+button,
+input[type='button'],
+input[type='button'],
+input[type='button'], {
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 0 $middle-grey;
+    cursor: pointer;
+    background-color: #fff;
+    border: 2px solid $middle-grey;
+    position: relative;
+    border-style: outset;
+}
+
+.button,
+button:active {
+    box-shadow: 1px 1px 0 #585858;
+    left: 1px;
+    top: 1px;
 }
