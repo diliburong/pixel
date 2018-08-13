@@ -1,8 +1,8 @@
 .button,
 button,
 input[type='button'],
-input[type='button'],
-input[type='button'], {
+input[type='reset'],
+input[type='submit'] {
     display: inline-block;
     padding: 6px 12px;
     border-radius: 5px;
@@ -12,11 +12,37 @@ input[type='button'], {
     border: 2px solid $middle-grey;
     position: relative;
     border-style: outset;
+    &:active {
+        box-shadow: 1px 1px 0 #585858;
+        left: 1px;
+        top: 1px;
+    }
+    &:focus {
+        outline: none;
+    }
+    &[disabled] {
+        cursor: no-drop;
+    }
+
+    &.button-success {
+        @include button($success-color)
+    }
+
+    &.button-warning {
+        @include button($warning-color)
+    }
+
+    &.button-error {
+        @include button($error-color)
+    }
+
+    &.button-info {
+        @include button($info-color)
+    }
 }
 
-.button,
-button:active {
-    box-shadow: 1px 1px 0 #585858;
-    left: 1px;
-    top: 1px;
-}
+
+
+
+
+

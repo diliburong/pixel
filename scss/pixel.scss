@@ -8,7 +8,12 @@
 
 @charset "utf-8"; 
 
+// Colors
 @import "./color";
+
+// Mixins
+@import "./mixins";
+
 @import "./normalize";
 @import "./base";
 @import "./typography";
