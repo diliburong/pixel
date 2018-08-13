@@ -8,3 +8,16 @@
     margin: 0 auto;
     padding: 0 0.75rem;
 }
+
+.row {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    .col {
+        display: block;
+        flex: 1 1 auto;
+        margin-left: 0;
+        max-width: 100%;
+        width: 100%;
+    }
+}
