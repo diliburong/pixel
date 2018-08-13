@@ -1,6 +1,8 @@
 # pixel
 
-![](https://github.com/diliburong/pixel/raw/master/media/pixel-logo.png)
+<p align="center">
+<img src="./media/pixel-logo.png" width="60" /><br><br>
+</P>
 
 pixel style CSS framework.
 
