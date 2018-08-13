@@ -1,3 +1,13 @@
 h4,h5 {
     color: $light-grey;
 }
+
+hr {
+    border: 0;
+    height: 20px;
+    margin: 20px 0;
+    background-position-y: center;
+    background-size: 8px 3px;
+    background-repeat: repeat-x;
+    background-image: linear-gradient(to right, #ccc 0%, #ccc 50%, transparent 50%);
+}

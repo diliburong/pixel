@@ -1,0 +1,30 @@
+// Text
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+// Visibility
+.hidden {
+    display: none;
+}
+
+// Float
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.clearfix {
+    @include clearfix();
+}
