@@ -9,5 +9,12 @@ hr {
     background-position-y: center;
     background-size: 8px 3px;
     background-repeat: repeat-x;
-    background-image: linear-gradient(to right, #ccc 0%, #ccc 50%, transparent 50%);
+    background-image: linear-gradient(to right, $middle-grey 0%, $middle-grey 50%, transparent 50%);
+}
+
+
+@media(min-width: 40rem) {
+    .test {
+        background-color:rebeccapurple !important;
+    }
 }

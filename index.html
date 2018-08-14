@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,9 +8,10 @@
     <title>pixel</title>
     <script src="./main.js"></script>
 </head>
+
 <body style="text-align: center;">
     <div class="main container">
-            pixel
+        pixel
         <div class="header">
             <h1>h1</h1>
             <h2>h2</h2>
@@ -24,31 +26,77 @@
             <button class="button-warning">warning</button>
             <button class="button-error">error</button>
             <button type="menu" class="button-info">info</button>
-            <button  disabled="disabled">disabled</button>
+            <button disabled="disabled">disabled</button>
         </div>
         <hr>
 
-        <div class="container">
-            <div class="row">
-                <div class="col box" style="background:red"></div>
-                <div class="col box" style="background:chocolate"></div>
-                <div class="col box" style="background:aqua"></div>
-                
+        <div class="row">
+            <div class="col-2">
+                <div class="box" style="background:#00ff7a">
+                    .row.col-2
+                </div>
             </div>
-
+            <div class="col-3">
+                <div class="box" style="background:#ffce65">
+                    .row.col-3
+                </div>
+            </div>
+            <div class="col">
+                <div class="box" style="background:#ff3d3d">
+                    .row.col
+                </div>
+            </div>
+            <div class="col">
+                <div class="box" style="background:#67daff">
+                    .row.col
+                </div>
+            </div>
+        </div>
+        <div class="row row-full">
+            <div class="col-8">
+                <div class="box" style="background:#00ff7a">
+                    .full.col-8
+                </div>
+            </div>
+            <div class="col">
+                <div class="box" style="background:#ffce65">
+                    .full.col
+                </div>
+            </div>
+            <div class="col">
+                <div class="box" style="background:#ff3d3d">
+                    .full.col
+                </div>
+            </div>
         </div>
 
-        <div class="box r" style="background:yellow"></div>
+        <div class="row">
+            <div class="col">
+                <div class="box" style="background:#00ff7a">
+                    .row.col
+                </div>
+            </div>
+            <div class="col">
+                <div class="box" style="background:#ffce65">
+                    .row.col
+                </div>
+            </div>
+            <div class="col">
+                <div class="box" style="background:#ff3d3d">
+                    .row.col
+                </div>
+            </div>
+        </div>
+
         <style>
-        .box {
-            height: 20px;
-        }
-
-        .r{
-            width: 40rem
-        }
-
-
+            .box {
+                width: 100%;
+                line-height: 30px;
+                padding: 5px;
+                font-size: 18px;
+                color: buttontext;
+                font-family: VT323, monospace;
+            }
         </style>
     </div>
 </body>

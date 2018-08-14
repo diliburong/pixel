@@ -9,15 +9,87 @@
     padding: 0 0.75rem;
 }
 
+// with max-width
+
 .row {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
-    padding: 0;
-    .col {
+    margin: -1rem 0 1rem -1rem;
+    &>.col {
         display: block;
-        flex: 1 1 auto;
-        margin-left: 0;
+        padding: 1rem 0 0 1rem;
+        flex: 1;
         max-width: 100%;
-        width: 100%;
+    } 
+    
+    // flex : flex-grow flex-shrink flex-basis
+    // When flex-grow is 0 , it wiil not divide up the remaining space
+
+    @for $i from 1 through 12 {
+        &>.col-#{$i} {
+            padding: 1rem 0 0 1rem;
+            flex: 0 0 percentage($i / 12);
+            max-width: percentage($i / 12);
+        }
+    }
+
+    @media screen and(max-width:$break-mobile) {
+        &.row-full {
+            flex-direction: column;
+            @for $i from 1 through 12 {
+                &>.col-#{$i} {
+                padding: 1rem 0 0 1rem;
+                max-width: 100% !important;
+                }
+            }
+        }
     }
 }
+
+// with min-width
+
+// .row {
+//     display: flex;
+//     flex-wrap: wrap;
+//     flex-direction: row;
+//     margin: -1rem 0 1rem -1rem;
+//     &>.col {
+//         display: block;
+//         padding: 1rem 0 0 1rem;
+//         flex: 1;
+//         max-width: 100%;
+//     } 
+    
+
+//     @for $i from 1 through 12 {
+//         &>.col-#{$i} {
+//             padding: 1rem 0 0 1rem;
+//             flex: 0 0 percentage($i / 12);
+//             max-width: percentage($i / 12);
+//         }
+//     }
+
+//     &.row-full {
+//         flex-direction: column;
+
+//         @for $i from 1 through 12 {
+//             &>.col-#{$i} {
+//             padding: 1rem 0 0 1rem;
+//             max-width: 100% !important;
+//             }
+//         }
+//     }
+    
+//     @media screen and(min-width:$break-mobile) {
+//         &.row-full {
+//             flex-direction: row;
+//             @for $i from 1 through 12 {
+//                 &>.col-#{$i} {
+//                 padding: 1rem 0 0 1rem;
+//                 max-width: 100% !important;
+//                 }
+//             }
+//         }
+//     }
+// }

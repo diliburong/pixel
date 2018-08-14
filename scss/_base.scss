@@ -1,8 +1,16 @@
+$break-mobile: 768px;
+
 @font-face {
     font-family: VT323;
     src: url('../fonts/VT323.woff2');
 }
+
+html {
+    // font-size: 62.5%;
+}
+
 * {
+    box-sizing: border-box;
     text-rendering: geometricPrecision;
 }
 
@@ -10,4 +18,5 @@ body {
     font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
     word-wrap: break-word;
     color: $text-color;
+    // font-size: 1.6rem;
 }
