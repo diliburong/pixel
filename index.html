@@ -9,10 +9,18 @@
     <script src="./main.js"></script>
 </head>
 
-<body style="text-align: center;">
-    <div class="main container">
-        pixel
-        <div class="header">
+<body>
+    <section class="hero container" style="text-align: center;">
+        <h1>Pixel</h1>
+    </section>
+
+    <section class="container " id="typography">
+        <h3 class="section-title">Typography</h3>
+        <p class="content">
+            CSS3 introduces a few new units, including the rem unit, which stands for "root em". The rem unit is relative to the font-size
+            of the root element html .
+        </p>
+        <div class="example">
             <h1>h1</h1>
             <h2>h2</h2>
             <h3>h3</h3>
@@ -20,7 +28,13 @@
             <h5>h5</h5>
             <h6>h6</h6>
         </div>
-        <div class="button-show">
+        <hr>
+    </section>
+
+    <section class="container" id="button">
+        <h3 class="section-title">Buttons</h3>
+        <p class="content">Button</p>
+        <div class="example">
             <button>button</button>
             <button class="button-success">sucess</button>
             <button class="button-warning">warning</button>
@@ -29,7 +43,10 @@
             <button disabled="disabled">disabled</button>
         </div>
         <hr>
+    </section>
 
+
+    <section class="container" id="gird">
         <div class="row">
             <div class="col-2">
                 <div class="box" style="background:#00ff7a">
@@ -52,6 +69,7 @@
                 </div>
             </div>
         </div>
+        
         <div class="row row-full">
             <div class="col-8">
                 <div class="box" style="background:#00ff7a">
@@ -87,18 +105,7 @@
                 </div>
             </div>
         </div>
-
-        <style>
-            .box {
-                width: 100%;
-                line-height: 30px;
-                padding: 5px;
-                font-size: 18px;
-                color: buttontext;
-                font-family: VT323, monospace;
-            }
-        </style>
-    </div>
+    </section>
 </body>
 
 </html>

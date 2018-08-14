@@ -1,0 +1,17 @@
+.hero h1 {
+    font-size: 4.1rem;
+    margin: 0.5em 0;
+}
+
+.section-title {
+    font-size: 1.5rem;
+}
+
+.box {
+    width: 100%;
+    line-height: 30px;
+    padding: 5px;
+    font-size: 18px;
+    color: buttontext;
+    font-family: VT323, monospace;
+}

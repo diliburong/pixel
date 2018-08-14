@@ -1,20 +1,33 @@
-h4,h5 {
-    color: $light-grey;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    letter-spacing: -.01rem;
+    margin-top: 0;
 }
 
+p {
+    margin-top: 0;
+}
+
+// h4,
+// h5 {
+//     color: $light-grey;
+// }
 hr {
     border: 0;
     height: 20px;
-    margin: 20px 0;
+    margin: 10px 0;
     background-position-y: center;
     background-size: 8px 3px;
     background-repeat: repeat-x;
     background-image: linear-gradient(to right, $middle-grey 0%, $middle-grey 50%, transparent 50%);
 }
 
-
 @media(min-width: 40rem) {
     .test {
-        background-color:rebeccapurple !important;
+        background-color: rebeccapurple !important;
     }
 }
