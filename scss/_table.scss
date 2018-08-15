@@ -1,25 +1,18 @@
-table {
+.table {
     width: 100%;
-    // border-spacing: 0;
-    // border: 1px solid black;
-}
-
-table,
-td,
-th {
-    border: 1px solid black;
-}
-
-td,th {
-    text-align: left;
-
-}
-
-@media screen and (max-width: 40.0rem) {
-    table,
-    td,
-    th {
-        border: 1px solid red;
+    max-width: 100%;
+    background-color: transparent;
+    border-spacing: 0;
+    border-collapse: collapse;
+    margin-bottom: 1.5rem;
+    & td,
+    & th {
+        vertical-align:top;
+        text-align: left;
+        padding: 0.8rem 0.5rem;
+        border-style: dashed;
     }
-    
+    & thead th {
+        font-weight: 700;
+    }
 }
