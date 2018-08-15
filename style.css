@@ -1,5 +1,5 @@
 .hero h1 {
-    font-size: 4.1rem;
+    font-size: 2.5rem;
     margin: 0.5em 0;
 }
 
@@ -14,4 +14,5 @@
     font-size: 18px;
     color: buttontext;
     font-family: VT323, monospace;
+    border-radius: 5px;
 }

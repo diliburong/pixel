@@ -1,0 +1,25 @@
+table {
+    width: 100%;
+    // border-spacing: 0;
+    // border: 1px solid black;
+}
+
+table,
+td,
+th {
+    border: 1px solid black;
+}
+
+td,th {
+    text-align: left;
+
+}
+
+@media screen and (max-width: 40.0rem) {
+    table,
+    td,
+    th {
+        border: 1px solid red;
+    }
+    
+}
