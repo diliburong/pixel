@@ -20,3 +20,23 @@ body {
     color: $text-color;
     // font-size: 1.6rem;
 }
+
+figure {
+    margin: 0 0 .4rem 0;
+}
+
+figcaption {
+    margin-top: 0.5rem;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+    color: #ff2e88;
+    border-bottom: 1px solid #ff2e88;
+
+    &:hover {
+        background-color: #FF2E88;
+        color: white;
+    }
+}

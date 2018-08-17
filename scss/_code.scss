@@ -1,0 +1,26 @@
+code {
+    font-size: 85%;
+    position: relative;
+    color: red;
+}
+
+pre {
+    padding: 0;
+    background: #e9e9e9;
+    & > code {
+        width: 100%;
+        display: block;
+        line-height: 1.5;
+        overflow-x: auto;
+        padding: 1rem;
+        white-space: pre;
+        color: inherit;
+    }
+    
+    & code[class*="language-"] {
+        margin: 0;
+        padding: 0;
+    }
+
+
+}

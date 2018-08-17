@@ -1,16 +1,17 @@
 // Media
 img {
-    padding: 30px;
+    // padding: 30px;
     border: 8px outset #193fd5;
-    -webkit-box-shadow: inset 0 0 0 10px brown, inset 0 0 0 20px yellow, inset 0 0 0 30px green;
-    box-shadow: inset 0 0 0 10px brown, inset 0 0 0 20px yellow, inset 0 0 0 30px green;
+    // -webkit-box-shadow: inset 0 0 0 10px brown, inset 0 0 0 20px yellow, inset 0 0 0 30px green;
+    // box-shadow: inset 0 0 0 10px brown, inset 0 0 0 20px yellow, inset 0 0 0 30px green;
+    display: block;
+    height: auto;
+    max-width: 100%;
 }
 
 // Image responsive
 .img-responsive {
-    display: block;
-    height: auto;
-    max-width: 100%;
+
 }
 
 // https://developer.mozilla.org/en-US/docs/Web/CSS/object-fit

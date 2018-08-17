@@ -35,12 +35,29 @@
         <h3 class="section-title">Buttons</h3>
         <p class="content">Button</p>
         <div class="example">
-            <button>button</button>
-            <button class="button-success">sucess</button>
-            <button class="button-warning">warning</button>
-            <button class="button-error">error</button>
-            <button type="menu" class="button-info">info</button>
-            <button disabled="disabled">disabled</button>
+            <div class="row">
+                <div class="col">
+                    <button>button</button>
+                    <button class="button-success">sucess</button>
+                    <button class="button-warning">warning</button>
+                    <button class="button-error">error</button>
+                    <button type="menu" class="button-info">info</button>
+                    <button disabled="disabled">disabled</button>
+                    <a href="#" class="button">123</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <a target="_blank" href="">kinda cool, huh?</a>
+                    <a href="">kinda cool, huh?</a>
+
+                </div>
+                <div class="col">
+                    <a href="http://www.baidu.com">123</a>
+                </div>
+            </div>
+
+
         </div>
         <hr>
     </section>
@@ -119,7 +136,7 @@
         </div>
     </section>
 
-    <section class="container" id="table" style="margin-bottom:150px;">
+    <section class="container" id="table">
         <h3 class="section-title">Table</h3>
         <div class="example">
             <table class="table">
@@ -149,22 +166,36 @@
             </table>
         </div>
     </section>
+    <section class="container" id="code" style="margin-bottom:150px;">
+        <h3 class="section-title">Code</h3>
+        <div class="example">
+            <pre><code class="lang-css">.pixel {
+    color: #9b4dca;
+}</code></pre>
 
-    <section class="container" id="image">
+        </div>
+
+    </section>
+    <!-- <section class="container" id="image">
         <h3 class="section-title">Image</h3>
         <div class="example">
             <div class="row">
                 <div class="col-6">
-                    <img class="img-responsive" src="https://picturepan2.github.io/spectre/img/osx-yosemite.jpg" alt="">
+                    <figure class="figure">
+                        <img class="img-fit-contain" src="https://picturepan2.github.io/spectre/img/osx-yosemite.jpg" alt="macOS约塞米蒂壁纸" style="background: #f8f9fa; height: 15rem; width: 100%;">
+                        <figcaption class="figure-caption text-center">img-fit-contain</figcaption>
+                    </figure>
 
                 </div>
                 <div class="col-6">
-                    <img class="img-responsive" src="https://picturepan2.github.io/spectre/img/osx-yosemite.jpg" alt="">
-                    
+                    <figure class="figure">
+                        <img class="img-fit-cover" src="https://picturepan2.github.io/spectre/img/osx-yosemite.jpg" alt="" style="background: #f8f9fa; height: 15rem; width: 100%;">
+                        <figcaption class="figure-caption text-center">img-fit-cover</figcaption>
+                    </figure>
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 </body>
 
 </html>

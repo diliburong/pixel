@@ -38,3 +38,11 @@ input[type='submit'] {
         @include button($info-color)
     }
 }
+
+a[class='button'] {
+    color: buttontext;
+    &:hover {
+        color: buttontext;
+        background-color: $white;
+    }
+}
