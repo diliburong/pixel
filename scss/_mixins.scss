@@ -19,7 +19,17 @@
     }
 }
 
-
 @mixin button ($color) {
     background-color: $color;
 }
+
+@mixin label-base() {
+    border-radius: $border-radius;
+    line-height: 1.2;
+    padding: .2rem .4rem;
+}
+
+// @mixin label-variant($color: $light-color, $bg-color: $primary-color) {
+//     background: $bg-color;
+//     color: $color;
+// }

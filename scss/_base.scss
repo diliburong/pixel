@@ -32,11 +32,11 @@ figcaption {
 a {
     cursor: pointer;
     text-decoration: none;
-    color: #ff2e88;
-    border-bottom: 1px solid #ff2e88;
+    color: $blue;
+    border-bottom: 1px solid $blue;
 
     &:hover {
-        background-color: #FF2E88;
-        color: white;
+        background-color: $blue;
+        color: $white;
     }
 }
