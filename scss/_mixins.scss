@@ -26,7 +26,8 @@
 @mixin label-base() {
     border-radius: $border-radius;
     line-height: 1.2;
-    padding: .2rem .4rem;
+    // padding: .2rem .4rem;
+    padding: .16rem .32rem;
 }
 
 // @mixin label-variant($color: $light-color, $bg-color: $primary-color) {

@@ -1,12 +1,12 @@
 .container {
-    max-width: 52.5rem;
+    max-width: 42rem;
     margin: 0 auto;
-    padding: 0 0.75rem;
+    padding: 0 0.6rem;
 }
 
 .container-fluid {
     margin: 0 auto;
-    padding: 0 0.75rem;
+    padding: 0 0.6rem;
 }
 
 // with max-width
@@ -15,10 +15,10 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    margin: -1rem 0 1rem -1rem;
+    margin: -.8rem 0 .8rem -.8rem;
     &>.col {
         display: block;
-        padding: 1rem 0 0 1rem;
+        padding: .8rem 0 0 .8rem;
         flex: 1;
         max-width: 100%;
     } 
@@ -28,7 +28,7 @@
 
     @for $i from 1 through 12 {
         &>.col-#{$i} {
-            padding: 1rem 0 0 1rem;
+            padding: .8rem 0 0 .8rem;
             flex: 0 0 percentage($i / 12);
             max-width: percentage($i / 12);
         }
@@ -39,7 +39,7 @@
             flex-direction: column;
             @for $i from 1 through 12 {
                 &>.col-#{$i} {
-                padding: 1rem 0 0 1rem;
+                padding: .8rem 0 0 .8rem;
                 max-width: 100% !important;
                 }
             }
@@ -53,10 +53,10 @@
 //     display: flex;
 //     flex-wrap: wrap;
 //     flex-direction: row;
-//     margin: -1rem 0 1rem -1rem;
+//     margin: -0.8rem 0 0.8rem -0.8rem;
 //     &>.col {
 //         display: block;
-//         padding: 1rem 0 0 1rem;
+//         padding: 0.8rem 0 0 0.8rem;
 //         flex: 1;
 //         max-width: 100%;
 //     } 
@@ -64,7 +64,7 @@
 
 //     @for $i from 1 through 12 {
 //         &>.col-#{$i} {
-//             padding: 1rem 0 0 1rem;
+//             padding: 0.8rem 0 0 0.8rem;
 //             flex: 0 0 percentage($i / 12);
 //             max-width: percentage($i / 12);
 //         }
@@ -75,7 +75,7 @@
 
 //         @for $i from 1 through 12 {
 //             &>.col-#{$i} {
-//             padding: 1rem 0 0 1rem;
+//             padding: 0.8rem 0 0 0.8rem;
 //             max-width: 100% !important;
 //             }
 //         }
@@ -86,7 +86,7 @@
 //             flex-direction: row;
 //             @for $i from 1 through 12 {
 //                 &>.col-#{$i} {
-//                 padding: 1rem 0 0 1rem;
+//                 padding: 0.8rem 0 0 0.8rem;
 //                 max-width: 100% !important;
 //                 }
 //             }

@@ -1,12 +1,14 @@
 $break-mobile: 768px;
-
 @font-face {
     font-family: VT323;
     src: url('../fonts/VT323.woff2');
 }
 
 html {
-    // font-size: 62.5%;
+    // The default REM (root em) size in Pixel.css is 20px.
+    // Please note in the Chinese/Japanese/Korean version, Chrome uses 12px as default minimum font size. 
+    // That is why Spectre sets rem default html font size to 20px, which is relatively easy to calculate.
+    font-size: 125%;
 }
 
 * {
@@ -17,16 +19,16 @@ html {
 body {
     font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
     word-wrap: break-word;
-    color: $text-color;
-    // font-size: 1.6rem;
+    color: $text-color; 
+    font-size: .8rem;
 }
 
 figure {
-    margin: 0 0 .4rem 0;
+    margin: 0 0 .2rem 0;
 }
 
 figcaption {
-    margin-top: 0.5rem;
+    margin-top: 0.25rem;
 }
 
 a {
@@ -34,7 +36,6 @@ a {
     text-decoration: none;
     color: $blue;
     border-bottom: 1px solid $blue;
-
     &:hover {
         background-color: $blue;
         color: $white;
