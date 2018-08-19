@@ -1,0 +1,21 @@
+ul,
+ol {
+    padding-left: 0;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+li {
+    position: relative;
+    display: block;
+    list-style: none;
+    padding-left: 1rem;
+    margin-bottom: .2rem;
+}
+
+ul>li:after {
+    content: '*';
+    position: absolute;
+    top: 0;
+    left: 0;
+}
