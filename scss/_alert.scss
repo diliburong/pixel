@@ -1,0 +1,22 @@
+.alert {
+    font-family: VT323, monospace;
+    font-size: 1rem;
+    border-radius: .2rem;
+    padding: .5rem .5rem .5rem .5rem;
+    position: relative;
+    border: 1px solid $blue;
+    display: block;
+    width: 100%;
+    &.alert-success {
+        @include alert($success-color);
+    }
+    &.alert-warning {
+        @include alert($warning-color);
+    }
+    &.alert-error {
+        @include alert($error-color);
+    }
+    &.alert-info {
+        @include alert($info-color);
+    }
+}
