@@ -1,5 +1,9 @@
 node_modules/
 npm-debug.log
+css/
+dist/
+docs/
+.cache/
 Dockerfile*
 docker-compose*
 .dockerignore
