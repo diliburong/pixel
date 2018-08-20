@@ -9,11 +9,33 @@ pixel style CSS framework.
 
 ## Install
 
+
 ## Development
 
-```bash
-yarn start
-```
+1. Start the project
+    ```bash
+    yarn install && yarn start
+    ```
+2. Build css
+    ```
+    yarn run build
+    ```
+
+
+
+## Development with docker
+
+1. Build docker image
+    ```bash
+    docker build --rm -f Dockerfile -t pixel:latest .
+    ```
+
+2. Run docker image
+    ```bash
+    docker run --name -t pixel-latest -d -p  1234:1234 pixel
+    ```
+
+3. Then you can visit `localhost:1234`.
 
 ## Contirbuting
 
