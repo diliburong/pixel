@@ -11,7 +11,8 @@
     "clean": "rimraf dist .cache css docs",
     "build-sass": "node-sass --output-style expanded --source-map true scss/pixel.scss css/pixel.css",
     "autoprefixer": "postcss -u autoprefixer --no-map.inline --autoprefixer.browsers \"last 1 versions\" -r css/*.css",
-    "build-autoprefix": "postcss -u autoprefixer --map false -r css/*.css"
+    "build-autoprefix": "postcss -u autoprefixer --map false -r css/*.css",
+    "build": "npm run build-sass && npm run build-autoprefix"
   },
   "devDependencies": {
     "autoprefixer": "^9.1.0",
